@@ -1,0 +1,8 @@
+name: PrisonButBans
+version: '${project.version}'
+main: me.honkling.prisonbutbans.PrisonButBans
+api-version: 1.19
+prefix: PrisonButBans
+load: STARTUP
+authors: [ honkling ]
+description: A flexible punishment system.
