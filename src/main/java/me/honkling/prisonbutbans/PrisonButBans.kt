@@ -2,6 +2,7 @@ package me.honkling.prisonbutbans
 
 import me.honkling.prisonbutbans.commands.CommandManager
 import me.honkling.prisonbutbans.lib.SQL
+import me.honkling.prisonbutbans.listeners.AsyncChatListener
 import me.honkling.prisonbutbans.listeners.PlayerLoginListener
 import me.honkling.prisonbutbans.punishments.Punishments
 import org.bukkit.Bukkit
@@ -17,6 +18,7 @@ class PrisonButBans : JavaPlugin() {
 
 		val pluginManager = Bukkit.getPluginManager()
 		pluginManager.registerEvents(PlayerLoginListener, this)
+		pluginManager.registerEvents(AsyncChatListener, this)
 	}
 
 	override fun onDisable() {

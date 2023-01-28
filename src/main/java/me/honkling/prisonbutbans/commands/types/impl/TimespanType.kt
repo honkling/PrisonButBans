@@ -40,8 +40,6 @@ object TimespanType : Type<Timespan> {
 		val type = match.replace(Regex("\\d"), "")
 		val pre = input.substring(0, input.length - type.length)
 
-		println("Completey ${listOf(pre, type)}")
-
 		return listOf("s", "m", "h", "d", "w", "mo", "y")
 				.filter { it.contains(type) }
 				.map { pre + it }
