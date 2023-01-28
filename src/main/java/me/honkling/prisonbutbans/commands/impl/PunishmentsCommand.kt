@@ -27,8 +27,6 @@ fun punishments(executor: Player, target: String?) {
 			return
 		}
 
-		executor.sendMessage(punishment.toString())
-
 		viewPunishment(executor, punishment)
 		return
 	}
